@@ -303,3 +303,32 @@ ion-icon {
 
     /* Add other responsive adjustments here */
 }
+@media (max-aspect-ratio: 1/1) and (max-width: 700px) {
+    .Z {
+        /* Adjusted size and position */
+        font-size: 46vh;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%) rotateZ(-30deg) translateY(-30%);
+        -ms-transform: translateX(-50%) rotateZ(-30deg) translateY(-30%);
+        transform: translateX(-50%) rotateZ(-30deg) translateY(-30%);
+    }
+    header {
+        /* Adjusted header position to be closer to the "D" letter */
+        top: 60%;
+    }
+}
+
+/* Styles for displaying social icons horizontally on mobile devices */
+@media only screen and (max-width: 600px) {
+    #socials {
+        display: flex;
+        justify-content: center; /* Center align the icons */
+        align-items: center; /* Vertically align the icons */
+        flex-wrap: wrap; /* Allow icons to wrap if necessary */
+    }
+
+    #socials a {
+        margin: 5px; /* Add some space between the icons */
+    }
+}
